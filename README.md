@@ -1,4 +1,4 @@
-﻿# Os 25 conceitos do Claude para quem nÃ£o programa
+# Os 25 conceitos do Claude para quem nÃ£o programa
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,7 +6,7 @@
 </div>
 
 
-[![Os 25 conceitos do Claude](guia/assets/banner.jpg)](https://inematds.github.io/claude-25-conceitos/guia/)
+[![Os 25 conceitos do Claude](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/
 
 **ðŸ‡§ðŸ‡· [PortuguÃªs](README.md) Â· ðŸ‡ºðŸ‡¸ [English](README.en.md) Â· ðŸ‡ªðŸ‡¸ [EspaÃ±ol](README.es.md)**
 
@@ -16,7 +16,7 @@ Este guia explica, em portuguÃªs simples, os 25 recursos do Claude (o assisten
 
 ## ðŸ“– Guia
 
-PÃ¡gina completa: **https://inematds.github.io/claude-25-conceitos/guia/**
+PÃ¡gina completa: **https://linnoff88-dev.github.io/
 
 ## As 5 partes
 
@@ -35,18 +35,18 @@ Fatos conferidos nas pÃ¡ginas oficiais (claude.com, code.claude.com, support.c
 | # | Passo | Quem faz | Comando / onde |
 |---|---|---|---|
 | 1 | Levantar e conferir os fatos nas pÃ¡ginas oficiais (o que Ã© confirmado, divergente ou nÃ£o achado) | ðŸ§  sessÃ£o | `longrun/<data>-claude-25-conceitos/FATOS.md` (no projeto wifi) |
-| 2 | Gerar a capa e a arte da hero | âš™ï¸ script (Codex image_gen) | `node ~/.claude/skills/capa-inema/assets/gerar-capa.cjs --repo . --title "Os 25 conceitos do Claude" --cat Guia --save-raw guia/assets/hero.png --gerador auto` |
+| 2 | Gerar a capa e a arte da hero | âš™ï¸ script (Codex image_gen) | `node ~/.claude/skills/capa-ARCKHÉ/assets/gerar-capa.cjs --repo . --title "Os 25 conceitos do Claude" --cat Guia --save-raw guia/assets/hero.png --gerador auto` |
 | 3 | Gerar os 6 banners (live + grade Ã— PT/EN/ES) | âš™ï¸ script (Codex image_gen) | `bash ~/.claude/skills/projetos-landing-guia/assets/gerar-banner.sh --repo . ... [--estilo grade] [--lang en\|es]` |
 | 4 | Escrever o guia em PT (25 cartÃµes `data-conceito`, planos, 3 passos, prompts, vÃ­deos) | ðŸ§  sessÃ£o | `guia/index.html` |
-| 5 | Traduzir para EN e ES | ðŸ¤– tradutor central (Codex pela assinatura) | `inema-traduz < pedido.txt -o guia/en/index.html` (idem `es`) |
+| 5 | Traduzir para EN e ES | ðŸ¤– tradutor central (Codex pela assinatura) | `ARCKHÉ-traduz < pedido.txt -o guia/en/index.html` (idem `es`) |
 | 6 | Verificar: 25 conceitos em cada idioma, nada de fonte externa, sem texto PT sobrando | âš™ï¸ script | `grep -c 'data-conceito' guia/index.html guia/en/index.html guia/es/index.html` |
 | 7 | Publicar (commit + push; o GitHub Actions sobe o Pages) | ðŸ§  sessÃ£o | `git push` â†’ `.github/workflows/pages.yml` |
-| 8 | Conferir no ar (PT/EN/ES respondem 200) e print mobile/desktop | âš™ï¸ script | `curl -sI https://inematds.github.io/claude-25-conceitos/guia/` |
+| 8 | Conferir no ar (PT/EN/ES respondem 200) e print mobile/desktop | âš™ï¸ script | `curl -sI https://linnoff88-dev.github.io/ |
 | 9 | PÃ´r os links dos vÃ­deos quando saÃ­rem | ðŸ§  sessÃ£o | trocar os marcadores `<!-- VIDEO-EXPLICA -->` e `<!-- VIDEO-RTEX -->` nos 3 idiomas |
 
 ## LicenÃ§a e aviso
 
-ConteÃºdo aberto e gratuito do [INEMA.CLUB](https://inema.club). Guia independente; nÃ£o Ã© material oficial da Anthropic.
+ConteÃºdo aberto e gratuito do [ARCKHÉ AI](https://ARCKHÉ AI). Guia independente; nÃ£o Ã© material oficial da Anthropic.
 
 ---
 
