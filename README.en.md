@@ -2,7 +2,7 @@
 
 [![Claudeâ€™s 25 Concepts](guia/assets/banner-en.jpg)](https://linnoff88-dev.github.io/
 
-**ðŸ‡§ðŸ‡· [PortuguÃªs](README.md) Â· ðŸ‡ºðŸ‡¸ [English](README.en.md) Â· ðŸ‡ªðŸ‡¸ [EspaÃ±ol](README.es.md)**
+**ðŸ‡§ðŸ‡· [Português](README.md) Â· ðŸ‡ºðŸ‡¸ [English](README.en.md) Â· ðŸ‡ªðŸ‡¸ [Espaê±ol](README.es.md)**
 
 ## What it is
 
@@ -30,7 +30,7 @@ Facts checked against official pages (claude.com, code.claude.com, support.claud
 |---|---|---|---|
 | 1 | Gather and verify facts on official pages (whatâ€™s confirmed, conflicting, or not found) | ðŸ§  session | `longrun/<data>-claude-25-conceitos/FATOS.md` (in the wifi project) |
 | 2 | Generate the cover and hero artwork | âš™ï¸ script (Codex image_gen) | `node ~/.claude/skills/capa-ARCKHÉ/assets/gerar-capa.cjs --repo . --title "Os 25 conceitos do Claude" --cat Guia --save-raw guia/assets/hero.png --gerador auto` |
-| 3 | Generate the 6 banners (live + grid Ã— PT/EN/ES) | âš™ï¸ script (Codex image_gen) | `bash ~/.claude/skills/projetos-landing-guia/assets/gerar-banner.sh --repo . ... [--estilo grade] [--lang en\|es]` |
+| 3 | Generate the 6 banners (live + grid ê— PT/EN/ES) | âš™ï¸ script (Codex image_gen) | `bash ~/.claude/skills/projetos-landing-guia/assets/gerar-banner.sh --repo . ... [--estilo grade] [--lang en\|es]` |
 | 4 | Write the guide in PT (25 `data-conceito` cards, plans, 3 steps, prompts, videos) | ðŸ§  session | `guia/index.html` |
 | 5 | Translate into EN and ES | ðŸ¤– central translator (Codex by subscription) | `ARCKHÉ-traduz < pedido.txt -o guia/en/index.html` (same for `es`) |
 | 6 | Verify: 25 concepts in each language, no external fonts, no leftover PT text | âš™ï¸ script | `grep -c 'data-conceito' guia/index.html guia/en/index.html guia/es/index.html` |
